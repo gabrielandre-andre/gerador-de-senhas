@@ -54,3 +54,14 @@ const content = {}
         content.passwordResult.innerHTML = passwordGenerate(content.numberPass)
 
     }
+
+
+    function verifyTheNumber(){
+        setInterval(function(){
+            if(content.numberPass == 0){
+                content.passwordResultDisplay.style.display = 'none'
+            }
+        },5)
+    }
+
+    verifyTheNumber()
