@@ -7,6 +7,11 @@ const content = {}
     content.passwordResultDisplay = document.querySelector('.result')
     content.passwordResult = document.querySelector('.result h2')
 
+
+    content.animationConfirm = document.getElementById('confirmGeneration')
+
+
+
     
 
 
@@ -30,6 +35,12 @@ const content = {}
 
 
     function genaratePassword(){
+
+        content.animationConfirm.style.animationName = 'topConfirm'
+
+        setTimeout(function(){
+            content.animationConfirm.style.animationName = 'none'
+        },3000)
 
         var password
 
