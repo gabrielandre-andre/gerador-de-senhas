@@ -36,6 +36,7 @@ const content = {}
 
     function genaratePassword(){
 
+
         content.animationConfirm.style.animationName = 'topConfirm'
 
         setTimeout(function(){
@@ -76,3 +77,38 @@ const content = {}
     }
 
     verifyTheNumber()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    content.passwordPrincipalSection = document.querySelector('.senhaCadastro')
+
+
+    function passwordVerify(){
+        content.passwordPrincipalSection.style.display = 'block'
+    }
+
+
+    function closeAba(){
+        content.passwordPrincipalSection.style.display = 'none'
+    }
